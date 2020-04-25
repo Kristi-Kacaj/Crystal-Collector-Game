@@ -17,7 +17,7 @@
         <h1>Crystals Collector!</h1>
     </header>
 
-    <div>
+    <div class="container-fluid">
         
         <div >
             <div >
@@ -49,11 +49,21 @@
             <h5>Losses:<span id="losses"></span></h5>
         </div> 
 
-        <div>
-            <button type="button" class='crystal' id='blue'><img src="assets/images/crystal-blue.png" ></button>
-            <button type="button" class='crystal' id="green"><img src="assets/images/crystal-green.png." ></button>
-            <button type="button" class='crystal' id="red"><img src="assets/images/crystal-red.png" ></button>
-            <button type="button" class='crystal' id="yellow"><img src="assets/images/crystal-yellow.png." ></button>
+        <div class="row">
+
+            <div class="col-md-4"> 
+                <button type="button"  class='crystal' id='blue'><img class="diamond" src="assets/images/crystal-blue.png" ></button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class='crystal' id="green"><img class="diamond" src="assets/images/crystal-green.png." ></button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class='crystal' id="red"><img class="diamond" src="assets/images/crystal-red.png" ></button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class='crystal' id="yellow"><img class="diamond" src="assets/images/crystal-yellow.png." ></button>
+            </div>  
+
         </div>
 
         <div>

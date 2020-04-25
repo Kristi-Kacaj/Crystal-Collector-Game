@@ -13,39 +13,41 @@ $(document).ready(function () {
     //global variables
     let wins = 0;
     let losses = 0;
-    let totalScore = 0;
+    let totalScore= 0;
 
     $("#wins").text(wins);
     $("#losses").text(losses);
     $("#total").text(totalScore);
 
+    //clicks crystals and adds random value to total score
     $(".crystal").on("click",function(){
         console.log(this.id)
         let color = ($(this).attr("id"))
         switch (color) {
             case "blue":
-                $("#total").text(totalScore);
                 totalScore+= blue;
+                $("#total").text(totalScore);
                 break;
             case "green":
-                $("#total").text(totalScore);
                 totalScore+= green;
+                $("#total").text(totalScore);
                 break;  
             case "red":
-                $("#total").text(totalScore);
                 totalScore+= red;
+                $("#total").text(totalScore);
                 break;
             case "yellow":
-                $("#total").text(totalScore);
                 totalScore+= yellow;
+                $("#total").text(totalScore);
                 break;
         }
-
+        //if total score equals random number, user wins
         if (totalScore === ranNumber) {
             wins++;
             $("#wins").text(wins);
             reset ();
             console.log("You win!")
+        //if total score is greater than random number, user loses
         } else if (totalScore >ranNumber){
             losses++;
             $("#losses").text(losses);
@@ -54,6 +56,7 @@ $(document).ready(function () {
         }
         console.log(totalScore)
 
+        //resets random number, random value of variable, and total score of user
         function reset(){
             ranNumber = Math.floor(Math.random()*102+19);
             console.log(ranNumber)
