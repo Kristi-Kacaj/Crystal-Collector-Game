@@ -1,4 +1,57 @@
+body {
+    background-image: url(../images/vintage-wallpaper.png);
+}
+
+header {
+    text-align: center;
+    color: goldenrod;
+    font-family: 'papyrus';
+    font-size: 26px;
+    padding: 20px 0 10px 0;
+}
+
+section {
+    text-align: center;
+    color: lightsteelblue;
+    font-family: 'Segoe print';
+}
+
+#ranNumber {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(204, 187, 37);
+    margin: 50px 75px 0px 50px;
+
+}
+
+button {
+    margin: 50px 15px 25px 15px;
+    padding: 0px;
+}
+
+#playerScore {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(204, 187, 37);
+    margin: 50px 50px 0px 75px;
+}
+
+#points-won {
+    font-family: 'Trebuchet MS';
+    font-size: 22px;
+    color:  rgb(204, 187, 37);
+    text-align: right;
+    margin-right: 75px;
+}
+
+#points-lost {
+    font-family: 'Trebuchet MS';
+    font-size: 22px;
+    color: rgb(204, 187, 37);
+    text-align: left;
+}
+
 .diamond {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
