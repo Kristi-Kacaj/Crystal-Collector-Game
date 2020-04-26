@@ -41,7 +41,7 @@ button {
     font-size: 22px;
     color:  rgb(204, 187, 37);
     text-align: right;
-    margin-right: 75px;
+    margin:15px 75px 0px 0px;
 }
 
 #points-lost {
@@ -49,6 +49,7 @@ button {
     font-size: 22px;
     color: rgb(204, 187, 37);
     text-align: left;
+    margin-top: 15px;
 }
 
 .diamond {
